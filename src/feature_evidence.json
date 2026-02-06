@@ -1,0 +1,79 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-single-page-portfolio-ui-with-a-clean-professional-header-that-displays-the-uploaded-image-img-20251225-164253-jpg-as-the-profile-photo-at-the-very-top-centered",
+      "featureTitle": "Create a single-page portfolio UI with a clean, professional header that displays the uploaded image (IMG_20251225_164253.jpg) as the profile photo at the very top, centered.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-css-only-presentation-enhancements-to-the-profile-photo-area-a-soft-background-blur-behind-the-image-container-and-a-slight-brightness-increase-while-keeping-colors-natural-do-not-modify-the-image-file-itself",
+      "featureTitle": "Apply CSS-only presentation enhancements to the profile photo area: a soft background blur behind the image container and a slight brightness increase, while keeping colors natural (do not modify the image file itself).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-the-portfolio-content-sections-beneath-the-header-in-this-order-and-with-the-exact-english-text-provided-name-harsh-bulchandani-tagline-creative-editing-content-writing-graphic-design-about-me-paragraph-services-i-offer-3-items-why-choose-me-4-bullet-points-tools-used-canva-ms-word-google-docs-and-design-style-description",
+      "featureTitle": "Render the portfolio content sections beneath the header in this order and with the exact English text provided: Name (Harsh Bulchandani), Tagline (Creative Editing • Content Writing • Graphic Design), About Me paragraph, Services I Offer (3 items), Why Choose Me (4 bullet points), Tools Used (Canva, MS Word, Google Docs), and Design Style description.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-overall-design-style-as-minimal-modern-and-trustworthy-with-soft-pastel-background-colors-clean-sans-serif-typography-generous-whitespace-and-a-mobile-friendly-single-column-layout",
+      "featureTitle": "Implement the overall design style as minimal, modern, and trustworthy with soft pastel background colors, clean sans-serif typography, generous whitespace, and a mobile-friendly single-column layout.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

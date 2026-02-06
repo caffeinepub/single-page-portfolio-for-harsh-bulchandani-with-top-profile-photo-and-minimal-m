@@ -1,0 +1,96 @@
+{
+  "kind": "build_request",
+  "title": "Single-page portfolio for Harsh Bulchandani with top profile photo and minimal modern styling",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a single-page portfolio UI with a clean, professional header that displays the uploaded image (IMG_20251225_164253.jpg) as the profile photo at the very top, centered.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Use the uploaded image as the profile photo for this portfolio.\nThe image should be placed at the top of the portfolio in a clean, professional layout."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The profile photo is shown at the top of the page in a header section and is visually centered.",
+        "The profile photo loads from a static asset included in the frontend build (no backend fetch required).",
+        "The profile photo includes English alt text (e.g., \"Profile photo of Harsh Bulchandani\")."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Apply CSS-only presentation enhancements to the profile photo area: a soft background blur behind the image container and a slight brightness increase, while keeping colors natural (do not modify the image file itself).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Enhance lighting slightly, keep skin tone natural, and apply a soft background blur for a polished look.",
+          "Do not alter the image itself; apply the following through CSS only:\n\n• Soft background blur behind the image container\n• Slight brightness increase using a CSS filter\n• Keep colors natural"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The blur effect is applied to the background behind the photo container (not destructively to the image file).",
+        "A subtle brightness/lighting increase is applied using CSS filters, without obvious color shifting.",
+        "No image editing pipeline is introduced; the original uploaded image remains unchanged on disk."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Render the portfolio content sections beneath the header in this order and with the exact English text provided: Name (Harsh Bulchandani), Tagline (Creative Editing • Content Writing • Graphic Design), About Me paragraph, Services I Offer (3 items), Why Choose Me (4 bullet points), Tools Used (Canva, MS Word, Google Docs), and Design Style description.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Name: Harsh Bulchandani\nTagline: Creative Editing • Content Writing • Graphic Design\n\nAbout Me:\nI am a dedicated freelancer offering professional editing, content writing, and graphic design services. I focus on clear communication, clean visuals, and high-quality results to help clients present their work confidently.\n\nServices I Offer:\n\nEditing & Proofreading (documents, resumes, assignments)\n\nContent Writing (captions, bios, posts)\n\nGraphic Design (Canva designs, Instagram posts, thumbnails, reel covers)\n\nWhy Choose Me:\n\nProfessional & clean work\n\nFast delivery\n\nAffordable pricing\n\nClient-focused approach\n\nTools Used:\nCanva, MS Word, Google Docs\n\nDesign Style:\nMinimal, modern, and trustworthy.\nSoft colors, clean fonts, and a professional freelancer aesthetic."
+        ]
+      },
+      "acceptanceCriteria": [
+        "All specified sections appear on a single page beneath the header.",
+        "Section text matches the user-provided wording and punctuation (including the • separators in the tagline).",
+        "Services and Why Choose Me are presented as clear lists (bulleted or card/list format)."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Implement the overall design style as minimal, modern, and trustworthy with soft pastel background colors, clean sans-serif typography, generous whitespace, and a mobile-friendly single-column layout.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Design Style:\nMinimal, modern, and trustworthy.\nSoft colors, clean fonts, and a professional freelancer aesthetic.",
+          "Styling notes:\n• Use soft pastel background colors\n• Clean sans‑serif font\n• Generous white space\n• Mobile‑friendly single‑column layout"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On mobile widths, content is readable and presented as a single column with comfortable spacing.",
+        "Typography is consistent and uses a clean sans-serif look across headings/body.",
+        "Background and component styling use soft, non-saturated pastel tones and ample whitespace.",
+        "No blue/purple-dominant theme is introduced unless required by the provided content (keep it neutral, soft, and professional)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be modified: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Keep the app as a single-page portfolio; no multi-page routing required.",
+    "Do not modify the uploaded image file; implement lighting/blur via CSS only."
+  ],
+  "nonGoals": [
+    "Internet Identity authentication or any login flow.",
+    "Backend data models, persistence, or CRUD for portfolio content (content is static).",
+    "Real-time features, messaging, or external integrations."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

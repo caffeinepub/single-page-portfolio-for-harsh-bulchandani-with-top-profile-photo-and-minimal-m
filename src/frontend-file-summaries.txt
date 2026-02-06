@@ -1,0 +1,5 @@
+{
+  "frontend/src/App.tsx": "Single-page portfolio component displaying Harsh Bulchandani's profile photo at the top with CSS blur/brightness effects, followed by About Me, Services, Why Choose Me, and Tools Used sections in a clean, minimal layout with a footer.",
+  "frontend/src/index.css": "Global styles with OKLCH color system using soft pastel tones (warm cream background, soft teal primary, peachy accents) and Inter font family for a minimal, modern, and trustworthy aesthetic.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the default theme with custom OKLCH color tokens, border radius values, and animation keyframes for the portfolio design system."
+}

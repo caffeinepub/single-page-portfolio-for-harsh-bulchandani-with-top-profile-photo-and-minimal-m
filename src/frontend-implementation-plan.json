@@ -1,0 +1,87 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Single-page portfolio for Harsh Bulchandani (static, minimal modern)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create a single-page portfolio header with the uploaded profile photo centered at the very top from a static frontend asset.",
+      "acceptanceCriteria": [
+        "The profile photo is shown at the top of the page in a header section and is visually centered.",
+        "The profile photo loads from a static asset included in the frontend build (no backend fetch required).",
+        "The profile photo includes English alt text (e.g., \"Profile photo of Harsh Bulchandani\")."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/IMG_20251225_164253.jpg",
+          "operation": "create",
+          "description": "Add the uploaded image as a public static asset to be referenced directly by the portfolio header (do not modify the image file contents)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Implement the single-page portfolio layout with a top header section that centers an <img> referencing the static asset at frontend/public/assets/IMG_20251225_164253.jpg and uses alt text \"Profile photo of Harsh Bulchandani\"."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Apply CSS-only blur-behind and subtle brightness filter styling to the profile photo area without altering the image file.",
+      "acceptanceCriteria": [
+        "The blur effect is applied to the background behind the photo container (not destructively to the image file).",
+        "A subtle brightness/lighting increase is applied using CSS filters, without obvious color shifting.",
+        "No image editing pipeline is introduced; the original uploaded image remains unchanged on disk."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add global styles (Tailwind base/components/utilities plus custom classes) to support a header photo container with a soft background blur behind it (e.g., via a pseudo-element/backdrop-filter) and apply a subtle CSS filter brightness increase on the image element itself—CSS only, with natural colors."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the photo area to use the CSS classes that implement the blur-behind effect and slight brightness increase, ensuring the blur is behind the container and not applied destructively to the image."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Render all required portfolio content sections beneath the header in the specified order with exact provided English text and list formatting.",
+      "acceptanceCriteria": [
+        "All specified sections appear on a single page beneath the header.",
+        "Section text matches the user-provided wording and punctuation (including the • separators in the tagline).",
+        "Services and Why Choose Me are presented as clear lists (bulleted or card/list format)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add the static content sections under the header in the exact required order and with the exact text: Name (Harsh Bulchandani), Tagline (Creative Editing • Content Writing • Graphic Design), About Me paragraph, Services I Offer (3 items), Why Choose Me (4 bullet points), Tools Used (Canva, MS Word, Google Docs), and Design Style description; format Services and Why Choose Me as clear lists."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Implement minimal, modern, trustworthy styling with soft pastel backgrounds, clean sans-serif typography, generous whitespace, and a mobile-friendly single-column layout.",
+      "acceptanceCriteria": [
+        "On mobile widths, content is readable and presented as a single column with comfortable spacing.",
+        "Typography is consistent and uses a clean sans-serif look across headings/body.",
+        "Background and component styling use soft, non-saturated pastel tones and ample whitespace.",
+        "No blue/purple-dominant theme is introduced unless required by the provided content (keep it neutral, soft, and professional)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define the global design system styling (soft neutral/pastel page background, consistent sans-serif typography defaults, spacing scale helpers, and readable heading/body styles) while keeping the theme neutral and professional (avoid blue/purple-dominant palettes)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply a single-column responsive layout (container widths, padding, and vertical rhythm) using Tailwind utility classes and/or the custom styles from frontend/src/index.css to ensure mobile-friendly readability and generous whitespace."
+        }
+      ]
+    }
+  ]
+}

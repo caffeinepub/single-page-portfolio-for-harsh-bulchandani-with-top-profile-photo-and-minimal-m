@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Single-page personal portfolio website for Harsh Bulchandani with a top header profile photo and minimal, modern styling.",
+  "architectural_notes": [
+    "Use React + Tailwind for implementation.",
+    "Do not edit the image file; apply blur/brightness effects via CSS styling only."
+  ],
+  "known_issues": [
+    "App generation hit a configuration error ('Please notify the Caffeine team'); generation may need retry or environment fix."
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-portfolio-ui-with-a-clean-professional-header-that-displays-the-uploaded-image-img-20251225-164253-jpg-as-the-profile-photo-at-the-very-top-centered",
+      "title": "Create a single-page portfolio UI with a clean, professional header that displays the uploaded image (IMG_20251225_164253.jpg) as the profile photo at the very top, centered.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-css-only-presentation-enhancements-to-the-profile-photo-area-a-soft-background-blur-behind-the-image-container-and-a-slight-brightness-increase-while-keeping-colors-natural-do-not-modify-the-image-file-itself",
+      "title": "Apply CSS-only presentation enhancements to the profile photo area: a soft background blur behind the image container and a slight brightness increase, while keeping colors natural (do not modify the image file itself).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-portfolio-content-sections-beneath-the-header-in-this-order-and-with-the-exact-english-text-provided-name-harsh-bulchandani-tagline-creative-editing-content-writing-graphic-design-about-me-paragraph-services-i-offer-3-items-why-choose-me-4-bullet-points-tools-used-canva-ms-word-google-docs-and-design-style-description",
+      "title": "Render the portfolio content sections beneath the header in this order and with the exact English text provided: Name (Harsh Bulchandani), Tagline (Creative Editing • Content Writing • Graphic Design), About Me paragraph, Services I Offer (3 items), Why Choose Me (4 bullet points), Tools Used (Canva, MS Word, Google Docs), and Design Style description.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-overall-design-style-as-minimal-modern-and-trustworthy-with-soft-pastel-background-colors-clean-sans-serif-typography-generous-whitespace-and-a-mobile-friendly-single-column-layout",
+      "title": "Implement the overall design style as minimal, modern, and trustworthy with soft pastel background colors, clean sans-serif typography, generous whitespace, and a mobile-friendly single-column layout.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build a single-page portfolio website (React + Tailwind) with sections: Name, Tagline, About, Services, Why Choose Me, Tools Used, Design Style.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Place uploaded image at top as profile photo; apply CSS-only presentation effects (soft background blur behind container, slight brightness increase) while keeping natural colors.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Apply minimal, modern, trustworthy design: soft pastel backgrounds, clean sans-serif typography, generous whitespace, mobile-friendly single-column layout.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Single-page portfolio for Harsh Bulchandani with top profile photo and minimal modern styling",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
